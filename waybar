@@ -1,4 +1,88 @@
 {
+  "layer": "top",
+  "position": "top",
+  "margin-top": 6,
+  "margin-left": 10,
+  "margin-right": 10,
+  "height": 34,
+  "modules-left": [
+    "custom/launcher",
+    "clock",
+    "custom/weather",
+    "sway/language"
+  ],
+  "modules-center": [
+    "sway/workspaces"
+  ],
+  "modules-right": [
+    "bluetooth",
+    "pulseaudio#output",
+    "pulseaudio#input",
+    "network",
+    "cpu",
+    "battery",
+    "tray"
+  ],
+  "custom/launcher": {
+    "format": "",
+    "on-click": "wofi --show drun",
+    "tooltip": false
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "<tt>{calendar}</tt>"
+  },
+  "custom/weather": {
+    "format": "⛅ {temperatureC}°",
+    "tooltip": false
+  },
+  "sway/language": {
+    "format": "{short}"
+  },
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{name}"
+  },
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected"
+  },
+  "pulseaudio#output": {
+    "format": "{icon}",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "headphone": "🎧",
+      "default": ["🔈", "🔉", "🔊"]
+    }
+  },
+  "pulseaudio#input": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": ""
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪",
+    "tooltip-format": "{essid} ({signalStrength}%)"
+  },
+  "cpu": {
+    "format": " {usage}%"
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "tray": {
+    "icon-size": 14,
+    "spacing": 8
+  }
+}{
   "reload_style_on_change": true,
   "layer": "top",
   "position": "top",
