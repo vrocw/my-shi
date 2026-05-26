@@ -1,0 +1,54 @@
+@import "../../.cache/wal/colors-css.css";
+
+window {
+  margin: 0px;
+  border: 2px solid var(--color4);
+  background-color: var(--background);
+}
+
+#input {
+  margin: 5px;
+  border: none;
+  color: var(--foreground);
+  background-color: var(--color0);
+}
+
+#inner-box {
+  margin: 5px;
+  border: none;
+  background-color: var(--background);
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: var(--background);
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: var(--foreground);
+} 
+
+#entry.activatable #text {
+  color: var(--background);
+}
+
+#entry > * {
+  color: var(--foreground);
+}
+
+#entry:selected {
+  background-color: var(--color2);
+}
+
+#entry:selected #text {
+  font-weight: bold;
+  color: var(--background);
+}
