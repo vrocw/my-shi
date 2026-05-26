@@ -4,6 +4,66 @@ window {
   margin: 0px;
   border: 2px solid var(--color4);
   background-color: var(--background);
+  border-radius: 20px; /* Matches your Waybar islands */
+}
+
+#input {
+  margin: 10px;
+  border: none;
+  color: var(--foreground);
+  background-color: var(--color0);
+  border-radius: 15px; /* Rounds the search bar */
+}
+
+#inner-box {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: var(--foreground);
+} 
+
+#entry {
+  margin: 2px 10px;
+  border-radius: 10px; /* Rounds the individual app rows */
+}
+
+#entry.activatable #text {
+  color: var(--foreground); /* FIXED: Text is actually visible now! */
+}
+
+#entry > * {
+  color: var(--foreground);
+}
+
+#entry:selected {
+  background-color: var(--color2);
+}
+
+#entry:selected #text {
+  font-weight: bold;
+  color: var(--background);
+}@import "../../.cache/wal/colors-css.css";
+
+window {
+  margin: 0px;
+  border: 2px solid var(--color4);
+  background-color: var(--background);
 }
 
 #input {
