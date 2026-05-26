@@ -59,3 +59,20 @@ window {
   font-weight: bold;
   color: @background;
 }
+
+
+
+
+
+
+
+
+show=drun
+prompt=Search Apps...
+width=450
+lines=8
+location=center
+allow_images=true
+image_size=24
+hide_scroll=true
+term=alacritty
